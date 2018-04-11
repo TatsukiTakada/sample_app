@@ -39,6 +39,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rails-controller-testing', '1.0.2'
+  gem 'minitest-reporters',       '1.1.14'
+  gem 'guard',                    '2.13.0'
+  gem 'guard-minitest',           '2.4.4'
 end
 
 group :development do
@@ -50,6 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'coffee-script-source', '1.8.0'
+gem 'win32console','1.3.2' 
 
 group :production do
   gem 'pg', '1.0.0'
